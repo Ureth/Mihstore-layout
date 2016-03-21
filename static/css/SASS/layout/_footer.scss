@@ -15,9 +15,42 @@
     float: right;
     color: #466972;
   }
-
+    &-block {
+  float: right;
+  }
 }
 
-.block {
-  float: right;
+
+.triangle-holder {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  margin: -44px 0 0 46px;
+  display: block;
+  &-blue{
+    width: 0px;
+    height: 0px;
+    border-bottom: 30px solid #4cb1ca;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+            transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    margin: -3px 0 0 -20px;
+  }
+  &-transparent {
+    width: 0px;
+    height: 0px;
+    border-top: 30px solid #e3ebed;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+            transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    position: absolute;
+    margin: 19px 0 0 1px;
+  }
 }
